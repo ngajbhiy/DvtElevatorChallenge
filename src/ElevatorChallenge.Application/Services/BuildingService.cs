@@ -44,18 +44,7 @@ namespace ElevatorChallenge.Application.Services
                 }
                 if (Console.WindowTop >= 0)
                     Console.Clear();
-                Console.WriteLine("Elevator Status:");
-                foreach (var elevator in elevators)
-                {
-                    Console.WriteLine($"Elevator {elevator.GetElevatorNum()}: " +
-                        $"{elevator.GetPassengers().Count} passengers, {elevator.GetDirection()},  {elevator.GetStatus()}");
-                }
-
-                Console.WriteLine("\nFloor Status:");
-                foreach (var floor in floors)
-                {
-                    Console.WriteLine($"Floor {floor.GetFloorNum()}: {floor.GetNumPassengers()}  passengers waiting");
-                }
+                OutputStatus();
 
                 Console.WriteLine("\nWhat would you like to do?");
                 Console.WriteLine("1. Call an elevator");

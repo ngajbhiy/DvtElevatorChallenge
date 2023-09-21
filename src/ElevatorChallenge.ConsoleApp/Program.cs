@@ -1,10 +1,7 @@
 ﻿
 using ElevatorChallenge.Application.Interfaces;
-using ElevatorChallenge.Application.Models;
 using ElevatorChallenge.Application.Services;
-//using ElevatorChallenge.Application.Services;
-using Microsoft.Extensions.DependencyInjection;
-using System.Security.Cryptography.X509Certificates;
+
 
 
 class program 
